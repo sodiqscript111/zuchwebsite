@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./navbar.css";
-
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
 import { Link } from 'react-router-dom';
@@ -38,7 +38,7 @@ function Navbar() {
         {/* Right Section */}
         <div className="right">
           <div className="cart-icon">
-            
+            <ShoppingBagOutlinedIcon />
             <span className="cart-badge">3</span>
           </div>
           <div className="menu-icon" onClick={handleMenuToggle}>
